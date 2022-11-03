@@ -1,9 +1,14 @@
 {
   
-  "scripts": {
-
-  },
+  "scripts": {},
+  
   "devDependencies": {
-    "cypress": "^10.11.0"
+  
+    
+  "cypress": "^10.11.0",
+  
+    
+  "cypress-v10-preserve-cookie": "^1.2.1"
+  
   }
 }
