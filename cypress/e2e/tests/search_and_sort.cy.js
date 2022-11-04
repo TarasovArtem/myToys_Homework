@@ -5,6 +5,7 @@ import { searchbar } from "../../objects/searchBar";
 import { buttons } from "../../objects/buttons";
 import { sortBar } from "../../objects/sortBar";
 import { productCard } from "../../objects/productCard";
+import { utilites } from "../../objects/utilites";
 
 describe('Product verification after searching and sorting', () => {
 
@@ -20,8 +21,8 @@ describe('Product verification after searching and sorting', () => {
     it('Search by product type, sort by price of products', () => {
         searchbar.inputSearch().type('trampolin');
         searchbar.searchFormBtn().click();
-        sortBar.sortSelectMenu().eq(1).select('priceDesc');
-        //productCard.productCard();
-        //productCard.productCard().eq(0).should('contain', $price);   
+        sortBar.sortSelectMenu(1).select('priceDesc');
+        utilites.sortFunc(5, productCard.productPrice);
+        
     })
 }) 
