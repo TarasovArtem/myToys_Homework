@@ -1,14 +1,13 @@
 {
   
-  "scripts": {},
-  
-  "devDependencies": {
-  
-    
-  "cypress": "^10.11.0",
-  
-    
-  "cypress-v10-preserve-cookie": "^1.2.1"
-  
+  "scripts": {
+    "cypress:open": "cypress open",
+    "chrome:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser chrome",
+    "firefox:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser firefox",
+    "edge:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser edge"
+  },
+
+  "devDependencies": {  
+      "cypress": "^10.11.0"
   }
 }
