@@ -11,9 +11,9 @@ module.exports = defineConfig({
       viewportHeight: 1080,
       requestTimeout: 5000,
       responseTimeout: 60000,
-      /*retries: {
+      retries: {
         runMode: 2,
         openMode: 1
-      }*/
+      }
     },
 });
