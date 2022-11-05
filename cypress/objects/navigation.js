@@ -1,12 +1,20 @@
 /// <reference types="cypress"/>
 
+
+
 export class Navigation {
+    
     mainPage() {
         return cy.visit('/');
     }
 
-    trampolinPage() {
-        return cy.visit('/sport-garten/gartenspielgeraete-cat2/trampolin/');
+    getUrl(url) {
+        return cy.url().should('include', url);
     }
+
+    getTitle(title) {
+        return cy.title().should('eq', title);
+    }
+
 }
 export const navigation = new Navigation();

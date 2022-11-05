@@ -1,26 +1,28 @@
 /// <reference types="cypress"/>
 
 
+
 export class Filters {
 
-    priceFilterBtn() {
-        return cy.get('[data-effective-value-key="priceFilter"]');
+    priceFilterBtn(num) {
+        return cy.get('[data-effective-value-key="priceFilter"]').eq(num);
     }
 
-    pricerangeSlider_valueStart() {
-        return cy.get('.pricerange__slider__value-start-user');
+    pricerangeSlider_valueStart(num) {
+        return cy.get('.pricerange__slider__value-start-user').eq(num);
     }
 
-    pricerangeSlider_valueEnd() {
-        return cy.get('.pricerange__slider__value-end-user');
+    pricerangeSlider_valueEnd(num) {
+        return cy.get('.pricerange__slider__value-end-user').eq(num);
     }
 
-    pricerangeSubmit() {
-        return cy.get('.js-price-filter-submit');
+    pricerangeSubmit(num) {
+        return cy.get('.js-price-filter-submit').eq(num);
     }
 
-    priceSubmit() {
-        return cy.get('.js-nfh-submit');
+    priceSubmit(num) {
+        return cy.get('.js-nfh-submit').eq(num);
     }
+
 }
 export const filters = new Filters();

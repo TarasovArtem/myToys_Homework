@@ -2,8 +2,6 @@
 
 import { productCard } from "./productCard";
 
-
-
 export class Utilites {
     
     sortFunc(a, b) {
@@ -11,7 +9,7 @@ export class Utilites {
         for (let i = 0; i < a; i++) {
             const curr = b(i);
             if (i > 0 && curr > arr[i-1]) {
-                break; // to return false
+                break; 
             }
             arr.push(curr);
         }

@@ -1,6 +1,9 @@
 /// <reference types="cypress"/>
 
+
+
 export class Searchbar {
+    
     inputSearch() {
         return cy.get('.search-form__input');
     }

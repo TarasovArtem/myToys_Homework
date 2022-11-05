@@ -1,6 +1,7 @@
 /// <reference types="cypress"/>
 
 
+
 export class ShoppingCart {
 
     addToshopCart(num) {
@@ -15,8 +16,11 @@ export class ShoppingCart {
         return cy.get('.layer__content ');
     }
     
-    msgSuccess(text) {
-        return cy.get('.msg-success').should('contain', text);
+    msgSuccess(num) {
+        return cy.get('.msg-success > p').eq(num).then(($msg_success) => {
+            const msg_success = $msg_success.text();
+            expect(msg_success).to.eq(msg_success); 
+        })
     }
 
     closeLayerBtn(num) {
