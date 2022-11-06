@@ -5,7 +5,9 @@
 
 ### Description
 
-    To test the main functions of the website, two test scenarios have been prepared, which include the 2 tests with a focus on certain functionality with verification of correct execution. The tests can be executed in any order, as they are independent of each other.
+    To test the main functions of the website, two test scenarios have been prepared, 
+    which include the 2 tests with a focus on certain functionality with verification of correct execution. 
+    The tests can be executed in any order, as they are independent of each other.
 
 ### Tests
 ##### Test Scenario: search and sort
