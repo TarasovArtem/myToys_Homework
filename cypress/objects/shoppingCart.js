@@ -5,7 +5,7 @@
 export class ShoppingCart {
 
     addToshopCart(num) {
-        return cy.get('.btn--add-to-cart').eq(num);
+        return cy.get('button.btn--add-to-cart').eq(num);
     }
 
     iconCartBtn() {
