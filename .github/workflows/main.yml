@@ -3,7 +3,7 @@ name: run e2e test of main branches
 on: 
   push:
     branches:
-      'main/*'
+      'main'
       
 jobs:
   run-e2e-tests:
