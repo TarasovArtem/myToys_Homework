@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v2
         
       - name: run e2e tests
-        run: npm run chrome:run
+        run: npm cypress run --spec 'cypress/e2e/tests/**'
