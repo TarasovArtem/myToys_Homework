@@ -5,4 +5,5 @@ npm-debug.log*
 cypress/videos
 cypress/screenshots
 cypress/reports
+cypress/report
 debug.log
