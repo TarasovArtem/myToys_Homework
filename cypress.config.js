@@ -15,6 +15,14 @@ module.exports = defineConfig({
         runMode: 2,
         openMode: 1
       },
-      failOnStatusCode: false
-    },
+      failOnStatusCode: false,
+      "reporter": "mochawesome",
+      "reporterOptions": {
+        "charts": true,
+        "overwrite": false,
+        "html": true,
+        "json": false,
+        "reportDir": "cypress/report/mochawesome-report"
+      }
+  }
 });

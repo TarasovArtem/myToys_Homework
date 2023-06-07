@@ -1,13 +1,21 @@
 {
-  
   "scripts": {
-    "cypress:open": "cypress open",
-    "chrome:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser chrome",
-    "firefox:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser firefox",
-    "edge:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser edge"
+
+  "cypress:open": "cypress open",
+  "chrome:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser chrome",
+  "firefox:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser firefox",
+  "edge:run": "cypress run --spec 'cypress/e2e/tests/**' --headless --browser edge",
+  "test:mochawesome": "cypress run mochawesome --spec 'cypress/e2e/tests/**'--headless --browser chrome",
+  "merge_reports": "mochawesome-merge --reportDir mochawesome-report > mochawesome-report/output.json",
+  "report": "marge mochawesome-report/output.json"
+  
   },
 
-  "devDependencies": {  
-      "cypress": "^10.11.0"
+  "devDependencies": {
+
+  "cypress": "^10.11.0",
+  "mocha": "^10.2.0",
+  "mochawesome": "^7.1.3",
+  "mochawesome-merge": "^4.3.0"
   }
 }
